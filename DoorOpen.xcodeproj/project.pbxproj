@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D52A0571E69897900906F25 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D52A0561E69897800906F25 /* NotificationCenter.framework */; };
+		0D52A05B1E69897900906F25 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D52A05A1E69897900906F25 /* TodayViewController.m */; };
+		0D52A05E1E69897900906F25 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D52A05C1E69897900906F25 /* MainInterface.storyboard */; };
+		0D52A0621E69897900906F25 /* DoorOpenWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0D52A0541E69897800906F25 /* DoorOpenWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0D52A0671E698CF900906F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DED319E1E683E83004DE806 /* Assets.xcassets */; };
 		0D8810AF1E647CC00084905D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8810AE1E647CC00084905D /* main.m */; };
 		0D8810B21E647CC00084905D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8810B11E647CC00084905D /* AppDelegate.m */; };
 		0D8810B51E647CC00084905D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8810B41E647CC00084905D /* ViewController.m */; };
@@ -15,7 +20,37 @@
 		0DED319F1E683E83004DE806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DED319E1E683E83004DE806 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0D52A0601E69897900906F25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D8810A21E647CC00084905D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D52A0531E69897800906F25;
+			remoteInfo = DoorOpenWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0D52A0661E69897900906F25 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0D52A0621E69897900906F25 /* DoorOpenWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0D52A0541E69897800906F25 /* DoorOpenWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DoorOpenWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D52A0561E69897800906F25 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		0D52A0591E69897900906F25 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		0D52A05A1E69897900906F25 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		0D52A05D1E69897900906F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0D52A05F1E69897900906F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D8810AA1E647CC00084905D /* DoorOpen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoorOpen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D8810AE1E647CC00084905D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D8810B01E647CC00084905D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,6 +64,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0D52A0511E69897800906F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D52A0571E69897900906F25 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0D8810A71E647CC00084905D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +82,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D52A0551E69897800906F25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D52A0561E69897800906F25 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D52A0581E69897900906F25 /* DoorOpenWidget */ = {
+			isa = PBXGroup;
+			children = (
+				0D52A0591E69897900906F25 /* TodayViewController.h */,
+				0D52A05A1E69897900906F25 /* TodayViewController.m */,
+				0D52A05C1E69897900906F25 /* MainInterface.storyboard */,
+				0D52A05F1E69897900906F25 /* Info.plist */,
+			);
+			path = DoorOpenWidget;
+			sourceTree = "<group>";
+		};
 		0D8810A11E647CC00084905D = {
 			isa = PBXGroup;
 			children = (
 				0D8810AC1E647CC00084905D /* DoorOpen */,
+				0D52A0581E69897900906F25 /* DoorOpenWidget */,
+				0D52A0551E69897800906F25 /* Frameworks */,
 				0D8810AB1E647CC00084905D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				0D8810AA1E647CC00084905D /* DoorOpen.app */,
+				0D52A0541E69897800906F25 /* DoorOpenWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +147,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0D52A0531E69897800906F25 /* DoorOpenWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D52A0651E69897900906F25 /* Build configuration list for PBXNativeTarget "DoorOpenWidget" */;
+			buildPhases = (
+				0D52A0501E69897800906F25 /* Sources */,
+				0D52A0511E69897800906F25 /* Frameworks */,
+				0D52A0521E69897800906F25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoorOpenWidget;
+			productName = DoorOpenWidget;
+			productReference = 0D52A0541E69897800906F25 /* DoorOpenWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		0D8810A91E647CC00084905D /* DoorOpen */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D8810C11E647CC00084905D /* Build configuration list for PBXNativeTarget "DoorOpen" */;
@@ -89,10 +171,12 @@
 				0D8810A61E647CC00084905D /* Sources */,
 				0D8810A71E647CC00084905D /* Frameworks */,
 				0D8810A81E647CC00084905D /* Resources */,
+				0D52A0661E69897900906F25 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0D52A0611E69897900906F25 /* PBXTargetDependency */,
 			);
 			name = DoorOpen;
 			productName = DoorOpen;
@@ -108,6 +192,11 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Davide Ricci";
 				TargetAttributes = {
+					0D52A0531E69897800906F25 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 34LRA54882;
+						ProvisioningStyle = Manual;
+					};
 					0D8810A91E647CC00084905D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 34LRA54882;
@@ -129,11 +218,21 @@
 			projectRoot = "";
 			targets = (
 				0D8810A91E647CC00084905D /* DoorOpen */,
+				0D52A0531E69897800906F25 /* DoorOpenWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0D52A0521E69897800906F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D52A0671E698CF900906F25 /* Assets.xcassets in Resources */,
+				0D52A05E1E69897900906F25 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0D8810A81E647CC00084905D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,6 +246,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0D52A0501E69897800906F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D52A05B1E69897900906F25 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0D8810A61E647CC00084905D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,7 +266,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0D52A0611E69897900906F25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D52A0531E69897800906F25 /* DoorOpenWidget */;
+			targetProxy = 0D52A0601E69897900906F25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		0D52A05C1E69897900906F25 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D52A05D1E69897900906F25 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		0D8810B61E647CC00084905D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -179,6 +302,37 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0D52A0631E69897900906F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 34LRA54882;
+				INFOPLIST_FILE = DoorOpenWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lynxspa.DoorOpen.DoorOpenWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "70fec256-d021-4f3f-b0fd-d6e686c07fb8";
+				PROVISIONING_PROFILE_SPECIFIER = "WildCard Dev";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0D52A0641E69897900906F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 34LRA54882;
+				INFOPLIST_FILE = DoorOpenWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lynxspa.DoorOpen.DoorOpenWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "13687871-abc7-4bcc-b31f-aeb55801f86b";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS Ad Hoc: *";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		0D8810BF1E647CC00084905D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -302,6 +456,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0D52A0651E69897900906F25 /* Build configuration list for PBXNativeTarget "DoorOpenWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D52A0631E69897900906F25 /* Debug */,
+				0D52A0641E69897900906F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		0D8810A51E647CC00084905D /* Build configuration list for PBXProject "DoorOpen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
