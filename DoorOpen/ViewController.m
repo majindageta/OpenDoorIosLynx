@@ -33,7 +33,7 @@
 
 -(void) callSimpleServer {
     NSURL *url = [NSURL URLWithString:@"http://10.0.2.76?on?json"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0];
     [_indicator setHidden:NO];
     [_mainButton setHidden:YES];
     [_mainButton setUserInteractionEnabled:NO];

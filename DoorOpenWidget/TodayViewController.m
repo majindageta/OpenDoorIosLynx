@@ -11,6 +11,7 @@
 
 @interface TodayViewController () <NCWidgetProviding>
 @property (weak, nonatomic) IBOutlet UIButton *mainButton;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 
 @end
 
@@ -18,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [_spinner setHidesWhenStopped:YES];
     [_mainButton addTarget:self action:@selector(callSimpleServer) forControlEvents:UIControlEventTouchUpInside];
 }
 
@@ -35,6 +37,7 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0];
     
     
+    [_spinner startAnimating];
     [_mainButton setHidden:YES];
     [_mainButton setUserInteractionEnabled:NO];
     [NSURLConnection sendAsynchronousRequest:request
@@ -43,6 +46,8 @@
                                                NSData *data, NSError *connectionError)
      {
          [_mainButton setHidden:NO];
+         
+         [_spinner stopAnimating];
          if (data.length > 0 && connectionError == nil)
          {
              NSDictionary *greeting = [NSJSONSerialization JSONObjectWithData:data

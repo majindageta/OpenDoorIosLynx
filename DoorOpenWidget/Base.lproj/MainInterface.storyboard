@@ -29,9 +29,14 @@
                                 </constraints>
                                 <state key="normal" image="open"/>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="uA6-QY-0rk">
+                                <rect key="frame" x="150" y="40" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="HMH-uK-18c" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="0zi-6x-ecA"/>
+                            <constraint firstItem="uA6-QY-0rk" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="GKb-k0-ilQ"/>
+                            <constraint firstItem="uA6-QY-0rk" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="N52-3J-FCd"/>
                             <constraint firstItem="HMH-uK-18c" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="jrz-Sw-lAn"/>
                         </constraints>
                     </view>
@@ -43,6 +48,7 @@
                     <size key="freeformSize" width="320" height="100"/>
                     <connections>
                         <outlet property="mainButton" destination="HMH-uK-18c" id="p5v-8q-zvd"/>
+                        <outlet property="spinner" destination="uA6-QY-0rk" id="I9B-nd-Rpv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
